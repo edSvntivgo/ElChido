@@ -17,7 +17,7 @@
 						@endforeach
 				</thead>
 		</table>
-		
+		{!!$comentarios->render()!!}
 	</div>
 	<div class="jumbotron">
 		{!!Form::open(['route'=>'comentario.store','method'=>'POST'])!!}
