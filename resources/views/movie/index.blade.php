@@ -28,7 +28,7 @@
 		<td>
 			{!!link_to_route('movie.edit', $title = 'Editar', $parameters = $movie->id, $attributes = ['class'=>'btn btn-warning form-control'])!!}
 		</td>
-		@elseif(Auth::user()->id !=1 || Auth::user()->id ==1)
+		@elseif(Auth::user()->id !=1 or Auth::user()->id ==1)
 		<td>
 			{!!link_to_route('comentario.index',$title='Comentarios',$parameters=$movie->id,$attributes=['class'=>'btn btn-primary form-control'])!!}
 		</td>
